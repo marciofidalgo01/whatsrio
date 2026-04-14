@@ -1,0 +1,288 @@
+[
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Innova 6 Portas de Vidro Reflecta com LED e Pes Preto Acetinado Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Preto Acetinado",
+      "descricao": "Alt 2,40m Larg 2,50m Prof 0,550m Peso 265Kg. Portas de vidro reflecta e LED.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO MOSCOU BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:2,40 ALT:2,35 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO CAPELINHA IMOP",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,65 ALT:2,16 PROF:0,42",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO MERIDIAN D`DORO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 2,00 ALT: 2,18 PROF:0,52",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO NEW STAR 3PTS SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 1,80 ALT:2,23 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO CAP. BELLUNO SAN MARINO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,55 ALT:2,02 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP 4PTS COPACABANA BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,14 ALT: 2,10 PROF:0,43",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP. CONJUGADO MAIA BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 0,78 ALT: 1,91 PROF:0,45",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "MODULADO APOLO SALLETO",
+      "categoria": "Modulado",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 2,40 ALT: 2,04 PROF:0,35",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP. 8 PTS MASTER IMOP",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 1,83 ALT:2,16 PROF.:0,42",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP. 3 PTS CORRER PANAMA SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 1,85 ALT:2,08 PROF.:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO ESTRELA 6PTS SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 1,50 ALT:1,80 PROF.:0,40",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO 6PTS CAIRO RUFATO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG: 1,80 ALT : 2,00 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP 6PTS HAWAI RUFATO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,80 ALT: 2,00 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO MONTREAL BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:2,73 ALT:2,30 PROF:0,56",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP 20033 ARAPLAC",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,50 ALT: 1,85 PROF:0,42",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO 4PTS RECIFE SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "LARG:1,21 ALT: 2,00 PROF:0,47",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO 4PTS TREVISO EVIDENCIA",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "",
+      "descricao": "L: 1,00 ALT:1,80 PROF:0,40",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Imperatriz 6P sendo 2 Portas Vidro Reflecta com LED e Pes Castanho Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Castanho",
+      "descricao": "Alt 2,40m Larg 2,30m Prof 0,485m Peso 188Kg. 2 portas reflecta e LED.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Absolut New 6P sendo 2P Reflecta com LED e Pes Castanho Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Castanho",
+      "descricao": "Alt 2,405m Larg 2,730m Prof 0,63m Peso 259Kg.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Multi Cancun 6P2G com Espelho Choco.OffWhite Poquema",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Choco.OffWhite",
+      "descricao": "Alt 1,80m Larg 1,48m Prof 0,40m com espelho.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Dallas Gold 6P6G com Pes Cinamomo.Branco Carioca",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Cinamomo.Branco",
+      "descricao": "Alt 1,87m Larg 1,53m Prof 0,40m Peso 65,0Kg.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Capelinha NT 5015 4P3G com Espelho Branco New. Rosa Flex Notavel",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Branco New / Rosa Flex",
+      "descricao": "Alt 1,87m Larg 1,61m Prof 0,45m Peso 79Kg.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Apolo Ripado 2P com Espelho e Pes Naturale.Off White Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Naturale.Off White",
+      "descricao": "Alt 2,390m Larg 2,778m Prof 0,63m Peso 294Kg.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Dali 2P8G com 2 Espelhos Cinamomo.Off White Madetec",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Cinamomo.Off White",
+      "descricao": "Alt 2,40m Larg 2,78m Prof 0,605m Peso 305,5Kg.",
+      "preco": null
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Meridian Plus 2P6G com Espelho Branco D Doro",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Branco",
+      "descricao": "Alt 2,18m Larg 1,35m Prof 0,520m.",
+      "preco": null
+    }
+  }
+]

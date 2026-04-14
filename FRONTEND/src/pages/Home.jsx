@@ -1,0 +1,187 @@
+import React, { useRef, useState, useEffect } from "react";
+import heroImg from "../assets/hero1.png";
+import CategorySection from "../components/CategorySection";
+import ProductGrid from "../components/ProductGrid";
+import Footer from "../components/Footer";
+import { useProdutos } from "../hooks/useProdutos";
+
+import { Link } from "react-router-dom";
+
+function Home({search}) {
+  const { produtos, buscarProdutos } = useProdutos();
+const produtosRef = useRef(null);
+  
+
+  const textRef = useRef(null);
+  const dropdownRef = useRef(null);
+
+  const [open, setOpen] = useState(false);
+
+  const handleMouseMove = (e) => {
+    const { offsetWidth, offsetHeight } = textRef.current;
+    const x = e.nativeEvent.offsetX;
+    const y = e.nativeEvent.offsetY;
+
+    const rotateY = ((x / offsetWidth) - 0.5) * 25;
+    const rotateX = ((y / offsetHeight) - 0.5) * -25;
+
+    textRef.current.style.transform = `
+      perspective(600px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+    `;
+  };
+
+
+
+  const resetTransform = () => {
+    textRef.current.style.transform =
+      "perspective(600px) rotateX(0deg) rotateY(0deg)";
+  };
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  // useEffect(() => {
+  //   buscarProdutos();
+  // }, []);
+useEffect(() => {
+  if (search) {
+    buscarProdutos(`nome=${search}`);
+  } else {
+    buscarProdutos();
+  }
+}, [search]);
+
+useEffect(() => {
+  if (search && produtos.length > 0) {
+    setTimeout(() => {
+      produtosRef.current?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 100);
+  }
+}, [search]);
+  
+const [offsetY, setOffsetY] = useState(0);
+
+useEffect(() => {
+  if (open) {
+    setOffsetY(40); // 
+  } else {
+    setOffsetY(0);
+  }
+}, [open]);
+
+  return (
+    <div id="homeDiv">
+      <div
+        className="heroBanner"
+        style={{ backgroundImage: `url(${heroImg})` }}
+      >
+        <div className="divStyleBanner">
+          <h2
+            ref={textRef}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={resetTransform}
+          >
+            Seu lar merece o melhor!{" "}
+            <span>Móveis de alta qualidade</span> para todos os estilos e
+            ambientes para transformar sua casa.
+          </h2>
+        </div>
+
+        <div className="divStyleBanner">
+          <div className="dropdown" ref={dropdownRef}>
+            <button
+              className="btn-primary"
+              onClick={() => setOpen(!open)}
+              style={{
+                transform: `translateY(-${offsetY}px)`,
+                transition: "transform 0.25s ease"
+              }}
+            >
+              O que você procura? ▼
+            </button>
+
+            <ul className={`dropdown-menu ${open ? "open" : ""}`}  
+               style={{
+                transform: `translateY(-${offsetY}px)`,
+                transition: "transform 0.25s ease"
+              }}>
+  <Link to="/categoria/Roupeiros">
+    <li className="dropdown-item">Roupeiros</li>
+  </Link>
+
+  <Link to="/categoria/Camas">
+    <li className="dropdown-item">Camas</li>
+  </Link>
+
+  <Link to="/categoria/Estofados">
+    <li className="dropdown-item">Estofados</li>
+  </Link>
+
+  <Link to="/categoria/Cozinha">
+    <li className="dropdown-item">Cozinha</li>
+  </Link>
+
+  <Link to="/categoria/Mesas">
+    <li className="dropdown-item">Mesas</li>
+  </Link>
+
+  <Link to="/categoria/Colchões">
+    <li className="dropdown-item">Colchões</li>
+  </Link>
+
+  <Link to="/categoria/Racks e Painéis">
+    <li className="dropdown-item">Racks e Painéis</li>
+  </Link>
+
+  <Link to="/categoria/Eletrodomésticos">
+    <li className="dropdown-item">Eletrodomésticos</li>
+  </Link>
+
+  <Link to="/categoria/Escrivaninhas">
+    <li className="dropdown-item">Escrivaninhas</li>
+  </Link>
+
+  <Link to="/categoria/Cômodas">
+    <li className="dropdown-item">Cômodas</li>
+  </Link>
+
+  <Link to="/categoria/Multiusos">
+    <li className="dropdown-item">Multiusos</li>
+  </Link>
+
+  <Link to="/categoria/Outros">
+    <li className="dropdown-item">Outros</li>
+  </Link>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+            <CategorySection onSearch={buscarProdutos} />
+
+      <div id="divDisplayContent" ref={produtosRef}>
+  <ProductGrid produtos={produtos} />
+</div>
+
+      <Footer />
+    </div>
+  );
+}
+
+export default Home;

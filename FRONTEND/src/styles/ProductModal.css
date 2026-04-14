@@ -1,0 +1,582 @@
+.modal{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 30px;
+  opacity: 0;
+  animation: modalFade 0.35s ease forwards;
+}
+
+@keyframes modalFade{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+.modal-content{
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  max-width: 760px;
+  width: 100%;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+  transform: translateY(20px);
+  animation: modalContent 0.35s ease forwards;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #006e32 #e0e0e000;
+}
+
+@keyframes modalContent{
+  to{ transform: translateY(0); }
+}
+
+.modal-title{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.modal-body{
+  display: flex;
+  gap: 28px;
+  width: 100%;
+}
+
+.modal-img{
+  max-height: 500px;
+  max-width: 400px;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #eef2f7;
+}
+
+.sem-imagem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.modal-info{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.modal-info p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.modal-description{
+  margin-top: 8px;
+  color: #4b5563;
+}
+
+.modal-price{
+  color: #0f766e;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.close-btn{
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: #ef4444;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: #00e43100;
+}
+
+.close-btn:hover{
+  background: #ef4444;
+  color: white;
+  transform: rotate(90deg);
+}
+
+/* --------------------------- */
+
+.modal-actions{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 2px solid rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+.add-cart-btn,
+.whatsapp-btn-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.add-cart-btn{
+  color: #111827;
+  border: 2px solid #111827;
+}
+
+.add-cart-btn:hover{
+  background: #71fc009a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(17,24,39,0.2);
+}
+
+.whatsapp-btn-modal{
+  color: #04781d;
+  border: 2px solid #00e431;
+  background: #00fc612d;
+}
+
+.whatsapp-btn-modal:hover{
+background: #71fc009a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(17,24,39,0.2);
+}
+
+.whatsapp-btn-modal img{
+  width: 22px;
+  height: 22px;
+}
+
+.alertCarrinho{
+  position: fixed;
+  top: 45%;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 16px 28px;
+  border-radius: 12px;
+  background: white;
+  color: #0f766e;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+  z-index: 9999;
+  animation: slideDown 0.55s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.alertCarrinho::before{
+  content: "✔ ";
+  font-weight: 700;
+}
+
+@keyframes slideDown{
+  from{
+    transform: translateX(50%) translateY(-40px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content::-webkit-scrollbar{
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px){
+  .modal{
+    padding: 16px;
+  }
+
+  .modal-content{
+    padding: 22px;
+  }
+
+  .modal-body{
+    flex-direction: column;
+  }
+
+  .modal-img{
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .modal-actions{
+    flex-direction: column;
+  }
+
+  .add-cart-btn,
+  .whatsapp-btn-modal{
+    width: 100%;
+  }
+}
+
+
+
+.dark-mode .modal{
+  
+
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(4px);
+
+  
+  opacity: 0;
+  animation: modalFade 0.35s ease forwards;
+}
+
+@keyframes modalFade{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.dark-mode .modal-content{
+  background: rgb(36,36,36);
+  border-radius: 14px;
+  width: 100%;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+
+  transform: translateY(20px);
+  animation: modalContent 0.35s ease forwards;
+
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes modalContent{
+  to{
+    transform: translateY(0);
+  }
+}
+
+.dark-mode .modal-title{
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  color: white;
+}
+
+.dark-mode .modal-body{
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+
+.dark-mode .modal-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+  flex: 1;
+}
+
+.dark-mode .modal-info p{
+  margin: 0;
+}
+
+.dark-mode .modal-description{
+  margin-top: 10px;
+  line-height: 1.4;
+  color: #cfcfcf;
+}
+
+.dark-mode .modal-price{
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.dark-mode .close-btn{
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  
+  font-size: 2rem;
+  background: none;
+  border: none;
+
+  color: #ff4d4d;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.dark-mode .close-btn:hover{
+transform: rotate(90deg);
+color: white;
+background-color: red;
+}
+
+.dark-mode .modal-actions{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 2px solid white;
+}
+
+.dark-mode .add-cart-btn{
+  position: relative;
+  overflow: hidden;
+
+  background: transparent;
+  border: 2px solid #00ff88;
+
+  padding: 12px 26px;
+  border-radius: 8px;
+
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 14px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 0 0px rgba(0,255,136,0);
+}
+
+.dark-mode .add-cart-btn:hover{
+  background: #00ff88;
+  color: #111;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0,255,136,0.25);
+}
+
+.dark-mode .add-cart-btn:active{
+  transform: scale(0.92);
+  box-shadow: 0 2px 8px rgba(0,255,136,0.3);
+}
+
+.dark-mode .add-cart-btn::after{
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+
+  transform: scale(0);
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.dark-mode .add-cart-btn:active::after{
+  animation: ripple 0.6s ease;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0);
+    opacity: 0.9;
+  }
+
+  100%{
+    transform: scale(12);
+    opacity: 0;
+  }
+}
+
+.dark-mode .add-cart-btn::before{
+  content: "▶";
+  margin-right: 8px;
+  transition: 0.25s;
+}
+
+.dark-mode .add-cart-btn:hover::before{
+  transform: scale(1.2);
+}
+
+.dark-mode .modal-content::-webkit-scrollbar{
+  width: 6px;
+}
+
+.dark-mode .modal-content::-webkit-scrollbar-thumb{
+  background: #ffffff79;
+  border-radius: 10px;
+}
+
+.dark-mode .alertCarrinho{
+  
+
+  background-color: black;
+  color: #00ff88;
+
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+.dark-mode .alertCarrinho::before{
+  content: "✔";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dark-mode .whatsapp-btn-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  position: relative;
+  overflow: hidden;
+
+  background: transparent;
+  border: 2px solid #00ff88;
+
+  padding: 12px 26px;
+  border-radius: 8px;
+
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 14px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 0 0px rgba(0,255,136,0);
+  text-decoration: none;
+}
+
+.dark-mode .whatsapp-btn-modal:hover{
+  background: #00ff88;
+  color: #111;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0,255,136,0.25);
+}
+
+.dark-mode .whatsapp-btn-modal:active{
+  transform: scale(0.92);
+  box-shadow: 0 2px 8px rgba(0,255,136,0.3);
+}
+
+.dark-mode .whatsapp-btn-modal::after{
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+
+  transform: scale(0);
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.dark-mode .whatsapp-btn-modal:active::after{
+  animation: ripple 0.6s ease;
+}
+
+
+
+@media (max-width:700px){
+  .dark-mode .modal-body{
+    flex-direction: column;
+  }
+
+ 
+
+  .dark-mode .modal-actions{
+    flex-direction: column;
+  }
+
+  .dark-mode .add-cart-btn,
+  .dark-mode .whatsapp-btn-modal{
+    width: 100%;
+  }
+}
+
+/* Container que segura a imagem e os botões */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+/* Botões de navegação */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  line-height: 1;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Contador opcional (ex: 1/2) */
+.image-counter {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}

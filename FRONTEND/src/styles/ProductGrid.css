@@ -1,0 +1,132 @@
+:root{
+
+  /* fundo geral */
+
+  --grid-bg: #f5f5f5;
+
+  /* card */
+
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.158);
+  --card-hover-shadow: rgba(0, 0, 0, 0.753);
+
+  /* imagem */
+
+  --img-bg: #d8d8d8;
+
+  /* texto */
+
+  --title-color: #111;
+  --text-color: #555;
+
+  /* preço */
+
+  --price-color: #00c96b;
+
+}
+
+.dark-mode{
+
+  --grid-bg: #0f0f0f;
+
+  --card-bg: #1a1a1a;
+  --card-shadow: rgba(0,0,0,0.5);
+  --card-hover-shadow: rgba(0,0,0,0.7);
+
+  --img-bg: #2b2b2b;
+
+  --title-color: #ffffff;
+  --text-color: #bdbdbd;
+
+  --price-color: #00ff88;
+
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+
+
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 9px 28px -9px #000000;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px var(--card-hover-shadow);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: var(--img-bg);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: var(--title-color);
+  margin: 20px 20px 10px 20px;
+  font-weight: 600;
+}
+
+.product-card p {
+  margin: 0 20px 15px 20px;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.product-card p:first-of-type {
+  color: var(--price-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .product-grid {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+}
+
+.no-results {
+  grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.clear-filter-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color, #333);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-filter-btn:hover{
+  background-color: var(--primary-hover-color, #00ac09);
+}
