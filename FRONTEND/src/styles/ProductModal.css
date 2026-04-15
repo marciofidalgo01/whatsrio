@@ -170,7 +170,7 @@
 }
 
 .add-cart-btn:hover{
-  background: #71fc009a;
+  background: #25D366;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(17,24,39,0.2);
 }
@@ -182,9 +182,10 @@
 }
 
 .whatsapp-btn-modal:hover{
-background: #71fc009a;
+background: #25D366;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(17,24,39,0.2);
+  color: black;
 }
 
 .whatsapp-btn-modal img{

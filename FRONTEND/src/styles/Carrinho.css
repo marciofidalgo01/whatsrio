@@ -7,11 +7,11 @@
   --text-main: #111;
   --text-secondary: #555;
 
-  --accent: #00c96b;
+  --accent: #25D366;
 
-  --btn-add: #00c96b;
+  --btn-add: #25D366;
   --btn-remove: #d43c3c;
-  --btn-minus: #666;
+  --btn-minus: #667;
 
   --total-bg: black;
 
@@ -27,9 +27,9 @@
   --text-main: #ffffff;
   --text-secondary: #cccccc;
 
-  --accent: #00ff88;
+  --accent: #25D366;
 
-  --btn-add: #00ff88;
+  --btn-add: #25D366;
   --btn-remove: #ff3c3c;
   --btn-minus: #444;
 
@@ -53,6 +53,7 @@
   margin-bottom: 18px;
   align-items: center;
   transition: all 0.2s ease;
+
 }
 
 

@@ -21,7 +21,7 @@
 
   /* preço */
 
-  --price-color: #00c96b;
+  --price-color: #25D366;
 
 }
 
@@ -38,7 +38,7 @@
   --title-color: #ffffff;
   --text-color: #bdbdbd;
 
-  --price-color: #00ff88;
+  --price-color: #25D366;
 
 }
 
@@ -134,3 +134,36 @@
   }
 }
 
+.clear-filter-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color, #333);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer}
+
+  .clear-filter-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color, #333);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  .product-card .price {
+    font-size: 1.1rem;
+  }
+}
+
+.clear-filter-btn:hover{
+  background-color: var(--primary-hover-color, #00ac09);
+}
+.no-results {
+  grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #666;
+}

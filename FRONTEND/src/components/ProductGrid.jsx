@@ -7,7 +7,6 @@ function ProductGrid({ produtos }) {
   const [selectedProduto, setSelectedProduto] = useState(null);
   const { searchTerm } = useCart(); // 👇 Consumindo o termo de busca do Contexto
 
-  // 🔍 Lógica de filtragem: compara o termo com Nome, Categoria e Cor
   const produtosFiltrados = (produtos || []).filter((produto) => {
     const termo = searchTerm.toLowerCase();
     return (
@@ -77,9 +76,8 @@ function ProductGrid({ produtos }) {
           ))
         ) : (
           <div className="no-results">
-            <p>Nenhum produto encontrado  
-              {/* "{searchTerm}". */}
-              </p>
+            <p>Nenhum produto encontrado... 
+              </p> {searchTerm}<br />
             <button 
               onClick={() => window.location.reload()} 
               className="clear-filter-btn"
