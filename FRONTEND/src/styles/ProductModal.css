@@ -36,13 +36,34 @@
   animation: modalContent 0.35s ease forwards;
   max-height: 90vh;
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #006e32 #e0e0e000;
+ 
 }
 
-@keyframes modalContent{
-  to{ transform: translateY(0); }
+.modal-content::-webkit-scrollbar {
+  width: 4px;
+
+
 }
+
+.modal-content::-webkit-scrollbar-track {
+  height: 50px;
+  background: transparent;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 40px;
+  
+}
+
+
+/* @keyframes modalContent{
+  to{ transform: translateY(0); }
+} */
 
 .modal-title{
   font-size: 1.8rem;
@@ -206,14 +227,7 @@ background: #71fc009a;
   }
 }
 
-.modal-content::-webkit-scrollbar{
-  width: 6px;
-}
 
-.modal-content::-webkit-scrollbar-thumb{
-  background: #cbd5e1;
-  border-radius: 10px;
-}
 
 @media (max-width: 700px){
   .modal{
@@ -235,6 +249,7 @@ background: #71fc009a;
 
   .modal-actions{
     flex-direction: column;
+    gap: 20px;
   }
 
   .add-cart-btn,
@@ -281,11 +296,11 @@ background: #71fc009a;
   overflow-y: auto;
 }
 
-@keyframes modalContent{
+/* @keyframes modalContent{
   to{
     transform: translateY(0);
   }
-}
+} */
 
 .dark-mode .modal-title{
   font-size: 1.6rem;
@@ -428,18 +443,7 @@ background-color: red;
   transition: 0.25s;
 }
 
-.dark-mode .add-cart-btn:hover::before{
-  transform: scale(1.2);
-}
 
-.dark-mode .modal-content::-webkit-scrollbar{
-  width: 6px;
-}
-
-.dark-mode .modal-content::-webkit-scrollbar-thumb{
-  background: #ffffff79;
-  border-radius: 10px;
-}
 
 .dark-mode .alertCarrinho{
   
@@ -570,7 +574,6 @@ background-color: red;
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Contador opcional (ex: 1/2) */
 .image-counter {
   position: absolute;
   bottom: 10px;
