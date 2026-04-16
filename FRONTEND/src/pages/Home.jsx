@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import heroImg from "../assets/hero1.png";
+
 import CategorySection from "../components/CategorySection";
 import ProductGrid from "../components/ProductGrid";
 import Footer from "../components/Footer";
@@ -7,9 +7,31 @@ import { useProdutos } from "../hooks/useProdutos";
 
 import { Link } from "react-router-dom";
 
-function Home({search}) {
+import heroImg1 from '../assets/hero1.png';
+import heroImg2 from '../assets/hero1.png';
+import heroImg3 from '../assets/hero1.png';
+
+function Home({search}) {  
+
+const imagensDoHero = [heroImg1, heroImg2, heroImg3];
+
+  const [indiceAtual, setIndiceAtual] = useState(0);
+
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setIndiceAtual((prevIndice) => 
+        prevIndice === imagensDoHero.length - 1 ? 0 : prevIndice + 1
+      );
+    }, 6000);
+
+    
+    return () => clearInterval(intervalo);
+  }, [imagensDoHero.length]);
+
+
+  
   const { produtos, buscarProdutos } = useProdutos();
-const produtosRef = useRef(null);
+  const produtosRef = useRef(null);
   
 
   const textRef = useRef(null);
@@ -85,12 +107,20 @@ useEffect(() => {
   }
 }, [open]);
 
+
+
   return (
     <div id="homeDiv">
-      <div
-        className="heroBanner"
-        style={{ backgroundImage: `url(${heroImg})` }}
-      >
+
+     <div className="heroBanner">
+      {imagensDoHero.map((heroImg, index) => (
+        <div
+          key={index}
+          className={`heroBgLayer ${index === indiceAtual ? 'active' : ''}`}
+          style={{ backgroundImage: `url(${heroImg})` }}
+        />
+      ))}
+
         <div className="divStyleBanner">
           <h2
             ref={textRef}
