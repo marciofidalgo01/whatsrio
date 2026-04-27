@@ -14,7 +14,7 @@ function ProductModal({ produto, onClose }) {
 
   if (!produto) return null;
 
-  const imagens = produto.imagens || [];
+const imagens = produto.imagem_url ? [produto.imagem_url] : [];
   const temMultiplasImagens = imagens.length > 1;
 
   // 👇 2. Funções de navegação
@@ -50,11 +50,11 @@ function ProductModal({ produto, onClose }) {
           <div className="carousel-wrapper">
             {imagens.length > 0 ? (
               <>
-                <img
-                  src={imagens[currentIndex].url}
-                  alt={`${produto.nome} - ${currentIndex + 1}`}
-                  className="modal-img"
-                />
+               <img
+  src={imagens[currentIndex]}
+  alt={`${produto.nome} - ${currentIndex + 1}`}
+  className="modal-img"
+/>
                 
                 {/* 👇 3. Condição para mostrar os botões apenas se houver > 1 imagem */}
                 {temMultiplasImagens && (

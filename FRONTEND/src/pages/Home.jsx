@@ -8,8 +8,8 @@ import { useProdutos } from "../hooks/useProdutos";
 import { Link } from "react-router-dom";
 
 import heroImg1 from '../assets/hero1.png';
-import heroImg2 from '../assets/hero1.png';
-import heroImg3 from '../assets/hero1.png';
+import heroImg2 from '../assets/hero2.png';
+import heroImg3 from '../assets/hero3.png';
 
 function Home({search}) {  
 
@@ -22,7 +22,7 @@ const imagensDoHero = [heroImg1, heroImg2, heroImg3];
       setIndiceAtual((prevIndice) => 
         prevIndice === imagensDoHero.length - 1 ? 0 : prevIndice + 1
       );
-    }, 6000);
+    }, 7000);
 
     
     return () => clearInterval(intervalo);

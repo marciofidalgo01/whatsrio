@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 
 
 class Produto(models.Model):
@@ -26,6 +27,13 @@ class Produto(models.Model):
         null=True,
         blank=True
     )
+
+    imagem_url = models.URLField(
+        max_length=500, 
+        null=True, 
+        blank=True
+    )
+
     destaque = models.BooleanField(default=False)
     ativo = models.BooleanField(default=True)
 
@@ -38,20 +46,18 @@ class Produto(models.Model):
         return self.nome
 
 
-class ProdutoImagem(models.Model):
-    produto = models.ForeignKey(
-        Produto,
-        on_delete=models.CASCADE,
-        related_name="imagens"
-    )
+# class ProdutoImagem(models.Model):
+#     produto = models.ForeignKey(
+#         Produto,
+#         on_delete=models.CASCADE,
+#         related_name="imagens"
+#     )
 
-    url = models.URLField()
+#     url = models.URLField()
 
-    def __str__(self):
-        return f"Imagem de {self.produto.nome}"
+#     def __str__(self):
+#         return f"Imagem de {self.produto.nome}"
     
-from django.db.models import Q
-
 def filtrar_produtos(request):
     produtos = Produto.objects.all()
 

@@ -1,6 +1,9 @@
 from rest_framework import viewsets
-from .models import Produto, ProdutoImagem
-from .serializers import ProdutoSerializer, ProdutoImagemSerializer
+from .models import Produto
+# from .models import ProdutoImagem
+# from .serializers import ProdutoImagemSerializer
+
+from .serializers import ProdutoSerializer
 from django.db.models import Q
 
 class ProdutoViewSet(viewsets.ModelViewSet):
@@ -74,6 +77,6 @@ class ProdutoViewSet(viewsets.ModelViewSet):
         return queryset
 
 
-class ProdutoImagemViewSet(viewsets.ModelViewSet):
-    queryset = ProdutoImagem.objects.all()
-    serializer_class = ProdutoImagemSerializer
+# class ProdutoImagemViewSet(viewsets.ModelViewSet):
+#     queryset = ProdutoImagem.objects.all()
+#     serializer_class = ProdutoImagemSerializer
