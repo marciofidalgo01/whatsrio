@@ -162,7 +162,6 @@ function CategorySection({ onSearch }) {
               <Option filter="ambiente" value="Quarto" />
               <Option filter="ambiente" value="Cozinha" />
               <Option filter="ambiente" value="Escritório" />
-              <Option filter="ambiente" value="Área externa" />
               <Option filter="ambiente" value="Diversos" />
             </div>
           </div>

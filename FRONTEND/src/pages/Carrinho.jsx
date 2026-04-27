@@ -70,9 +70,26 @@ function Carrinho() {
             Voltar
           </button> 
           
-         <button className="checkout-btn">
-          Finalizar Compra
-         </button>
+        <button
+  className="checkout-btn"
+  onClick={() => {
+    const numeroWhatsApp = "5521990848660";
+
+    const mensagem = cart.map((item) => {
+      return `• ${item.nome} /
+      ${item.descricao} /
+      Qtd: ${item.quantidade}`;
+    }).join("\n\n");
+
+    const textoFinal = `Olá! Estou interessado nos seguintes produtos:\n\n${mensagem}`;
+
+    const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoFinal)}`;
+
+    window.open(link, "_blank");
+  }}
+>
+  Finalizar Compra
+</button>
         </div>
       </div>
     </>

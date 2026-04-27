@@ -85,7 +85,10 @@ const imagens = produto.imagem_url ? [produto.imagem_url] : [];
             className="add-cart-btn"
             onClick={() => {
               addToCart(produto);
-              setMostrarAlert(true);
+              setMostrarAlert(false); // reseta
+              setTimeout(() => {
+                setMostrarAlert(true); // ativa de novo
+              }, 10);
             }}
             disabled={!produto.ativo}
           >

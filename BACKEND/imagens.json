@@ -2,362 +2,385 @@
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "SOFÁ CAMA MALU MATRIX",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
+      "nome": "Roupeiro Innova 6 Portas de Vidro Reflecta com LED e Pes Preto Acetinado Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Preto Acetinado",
+      "descricao": "Alt 2,40m Larg 2,50m Prof 0,550m Peso 265Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/INNOVA-RP-6P-REFLECTA-PRT-AMB.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUPEIRO MOSCOU BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Fechado: Larg 1,13 Alt 0,80 Prof 0,85 | Aberto: Larg 1,13 Alt 0,40 Prof 1,80",
+      "descricao": "Larg 2,40 Alt 2,35 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_7eb7e2ca7289451a925d3062971ed85a~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_4c866457c24a4133a84825402e124745~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "SOFANETE LILI ROGEL",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO CAPELINHA IMOP",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Fechado: Larg 1,76 Alt 0,38 Prof 0,60 | Aberto: Larg 1,20",
+      "descricao": "Larg 1,65 Alt 2,16 Prof 0,42",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_2c2246b431804b81b5ec7db056ad53a2~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_90a66df4a3864107b69489d820fa27a6~mv2.webp"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Estofado Retratil Reclinavel Atlas 290 3x80 Vel Inca Marrom Idealle",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Marrom",
-      "descricao": "Alt 0,90m Larg módulos 0,80m + braço 0,25m Prof fechado 1,10m Prof aberto 1,60m",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Estofado-Atlas-290-Marrom.jpeg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Reclinavel Dakar 250 2x100 Grafite Evidence",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Grafite",
-      "descricao": "Alt 1,15m Larg 1,00m + braço 0,25m Prof fechado 1,25m Prof aberto 1,85m",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/EStofado-Dalar-250.1-Grafite.jpg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retr Ouro Preto 190 Azul Idealle",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Azul",
-      "descricao": "Alt 1,20m Larg 0,70m Prof fechado 1,20m Prof aberto 1,80m braço 0,25m",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/OuroPreto190IdealleAzul.jpeg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Reclinavel Fenix 200 Vermelho Diviminas",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Vermelho",
-      "descricao": "Alt 0,90m Larg assento 0,75m + braço 0,25m Prof fechado 0,95m Prof aberto 1,40m",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Estofado-Fenix-Vermelho.jpeg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Reclinavel Ouro Preto 250 Preto Idealle",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Preto",
-      "descricao": "Alt 1,20m Larg 1,00m Prof fechado 1,20m Prof aberto 1,80m braço 0,25m",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/OuroPreto190Preto.jpeg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Carioca Veludo Cinza Diviminas",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Cinza",
-      "descricao": "Alt 0,95m Larg 2 módulos de 1,00m (assento 0,80m + braço 0,20m)",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/cariocacinza.jpg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Reclinavel Caique 200 Veludo Bombom Viero",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Bombom",
-      "descricao": "Alt 1,00m Larg 2,00m Prof fechado 0,82m Prof aberto 1,44m Peso 53Kg",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Estofado-Caique-Bombom.jpeg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Estofado Retratil Reclinavel Leblon 210 Bege Escuro Evidence",
-      "categoria": "Estofado",
-      "ambiente": "Sala",
-      "cor": "Bege Escuro",
-      "descricao": "Alt 1,10m Larg 0,80m + braço 0,25m Prof fechado 1,25m Prof aberto 1,85m Peso 46Kg",
-      "preco": null,
-      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Leblon-210-Bege-Escuro-813.jpg"
-    }
-  },
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Home Star Valdemoveis",
-      "categoria": "Home",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO MERIDIAN D`DORO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,50 Alt 1,85 Prof 0,38",
+      "descricao": "Larg 2,00 Alt 2,18 Prof 0,52",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_c6879b61b41b4ef782a46e0da1186604~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_8ac86d97d9454f34868a5c37b3df6354~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Home Serrano JCM",
-      "categoria": "Home",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO NEW STAR 3PTS SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,50 Alt 1,90 Prof 0,38",
+      "descricao": "Larg 1,80 Alt 2,23 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_759274e7667c4656b3d0e055bee12c74~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_2990610b57cb4c719046b2b2ac0b08fa~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Home Curitiba 1,34 Valdemoveis",
-      "categoria": "Home",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO CAP. BELLUNO SAN MARINO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,34 Alt 2,18 Prof 0,36",
+      "descricao": "Larg 1,55 Alt 2,02 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_0648556b4c884b1396fd1a38dd3f5e8e~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_73435db41c8f45a7b027b914e13f4360~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Painel Panama Plus Permobili",
-      "categoria": "Painel",
-      "ambiente": "Sala",
+      "nome": "ROUP 4PTS COPACABANA BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,62 Alt 1,57 Prof 0,35",
+      "descricao": "Larg 1,14 Alt 2,10 Prof 0,43",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_c59b95086610474eadc1be3c5a70831c~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_5c9b7e9103bb43ce9374e823a6eee1cd~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Painel Valencia Permobili",
-      "categoria": "Painel",
-      "ambiente": "Sala",
+      "nome": "ROUP. CONJUGADO MAIA BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,60 Alt 1,35 Prof 0,35",
+      "descricao": "Larg 0,78 Alt 1,91 Prof 0,45",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_63a2cf49ce4f4e04bfe8d285177d7629~mv2.jpg"
-    }
-  },
-
-  {
-    "model": "produtos.produto",
-    "fields": {
-      "nome": "Painel Dunas Permobili",
-      "categoria": "Painel",
-      "ambiente": "Sala",
-      "cor": null,
-      "descricao": "Larg 1,35 Alt 1,08",
-      "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_1c847eea67714cd6a51a3c52c1e1cd1e~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_e84c5c7c88db4ee88d252a6d64690a0d~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Seleto JCM",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "MODULADO APOLO SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,21 Alt 0,68 Prof 0,36",
+      "descricao": "Larg 2,40 Alt 2,04 Prof 0,35",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_d839f22a557343e9bba5df719f256fc3~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_ec74b67e67384a96b041cb031750d1ce~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Bancada Volpi Permobili",
-      "categoria": "Bancada",
-      "ambiente": "Sala",
+      "nome": "ROUP. 8 PTS MASTER IMOP",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,54 Alt 0,58 Prof 0,38",
+      "descricao": "Larg 1,83 Alt 2,16 Prof 0,42",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_343d6235a558416292b219f8be6eb86f~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_3d180200acc34c5baa2a112db8320d70~mv2.webp"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Bancada Grecia Permobili",
-      "categoria": "Bancada",
-      "ambiente": "Sala",
+      "nome": "ROUP. 3 PTS CORRER PANAMA SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,54 Alt 0,65 Prof 0,38",
+      "descricao": "Larg 1,85 Alt 2,08 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_11c5087bedbb4309b4d5e76a81596950~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_b6f625d93ddb47438e372d13c6d9ec3f~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Sublime JCM",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO ESTRELA 6PTS SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,82 Alt 0,68 Prof 0,38",
+      "descricao": "Larg 1,50 Alt 1,80 Prof 0,40",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_1c84abca933940f997c3d03c9f34e1e0~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_d574f53e2a7c47b08b29366222fcc0f3~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Impar JCM",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO 6PTS CAIRO RUFATO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,60 Alt 0,66 Prof 0,38",
+      "descricao": "Larg 1,80 Alt 2,00 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_8ca56d5380994f66bd2f3198cc1cb6de~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_8f5770a444934e88b92124323e3ece9c~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Detroit Valdemoveis",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "ROUP 6PTS HAWAI RUFATO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,60 Alt 0,66 Prof 0,38",
+      "descricao": "Larg 1,80 Alt 2,00 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_26558d5841a1439da49a9fbe48607671~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_05383fd7bec14ad5a1edb9d5fe3e1d10~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Painel Atena Valdemoveis",
-      "categoria": "Painel",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO MONTREAL BENETIL",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,20 Alt 0,89 Prof 0,00",
+      "descricao": "Larg 2,73 Alt 2,30 Prof 0,56",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_657221283c0241ddab878aca50fe5b15~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_386f4aa236eb4e7ab6ccbc49db5e2404~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Bancada Berlim Permobili",
-      "categoria": "Bancada",
-      "ambiente": "Sala",
+      "nome": "ROUP 20033 ARAPLAC",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,80 Alt 0,55 Prof 0,38",
+      "descricao": "Larg 1,50 Alt 1,85 Prof 0,42",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_e107046c783e488f97ecbbb2f9fa2cf1~mv2.webp"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_e6f2d8685bbb486bb0ea67c42fd47f2c~mv2.png"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Houston Valdemoveis",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO 4PTS RECIFE SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,35 Alt 0,65 Prof 0,36",
+      "descricao": "Larg 1,21 Alt 2,00 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_d01c9e5576104372a0c81e9d4834f325~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_99bf3726db874f4fbec52dc9478d1acd~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Buffet/Rack Filipe Viero",
-      "categoria": "Buffet",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO 4PTS TREVISO EVIDENCIA",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,56 Alt 0,76 Prof 0,41",
+      "descricao": "L: 1,00 Alt: 1,80 PROF: 0,40",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_82e1f14f51a443ba871c22fec460b5e6~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_18365b11756a45ea8627d104b77351e3~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Humor JCM",
-      "categoria": "Rack",
-      "ambiente": "Sala",
+      "nome": "ROUP ESTRELA 4PTS SALLETO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,36 Alt 0,64 Prof 0,39",
+      "descricao": "Larg 1,00 Alt 1,80 Prof 0,40",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_91d1e0313050473ebf7efd1c66acdbd4~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_f6034c5a42f841c19db6457453b8ca02~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Painel Sion JCM",
-      "categoria": "Painel",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO 4PTS TREVISO EVIDENCIA (VARIAÇÃO)",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Larg 1,36 Alt 1,08 Prof 0,23",
+      "descricao": "L: 1,00 Alt: 1,80 PROF: 0,40",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_97ff9d1c0b61448a9e7f58e79ad1d1b0~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_ccff14581d734511b1949ec7b5f9c339~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Mesinha Canto Sparta (com vidro)",
-      "categoria": "Mesa",
-      "ambiente": "Sala",
+      "nome": "ROUPEIRO 4PTS RECIFE SALLETO (VARIAÇÃO)",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
       "cor": null,
-      "descricao": "Diâmetro do tampo: 0,45 | Pés 0,50 ou 0,60 (vendidas separadamente)",
+      "descricao": "Larg 1,21 Alt 2,00 Prof 0,47",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_2228201750dc4251897b06208126b5ad~mv2.jpg"
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_1d851d2cabdf427280837d6fefe71776~mv2.jpg"
     }
   },
   {
     "model": "produtos.produto",
     "fields": {
-      "nome": "Rack Carinho JCM",
-      "categoria": "Rack",
-      "ambiente": "Sala",
-      "cor": null,
-      "descricao": "Larg 1,09 Alt 0,64 Prof 0,38",
+      "nome": "Roupeiro Imperatriz 6P sendo 2 Portas Vidro Reflecta com LED e Pes Castanho Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Castanho",
+      "descricao": "Alt 2,40m Larg 2,30m Prof 0,485m Peso 188Kg",
       "preco": null,
-      "imagem_url": "https://static.wixstatic.com/media/23bc40_986d6179ee1040b892c5a53c4f68417c~mv2.jpg"
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Roupeiro-Imperatriz-Reflecta_Castanho.jpeg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP ISIS SAN MARINO",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": null,
+      "descricao": "Larg 0,70 Alt 1,75 Prof 0,38",
+      "preco": null,
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_1cd1c0b682a84f568db9e77b268b7020~mv2.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "ROUP NEW MARBELLA EVIDENCIA",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": null,
+      "descricao": "Larg 0,93 Alt 1,83 Prof 0,40",
+      "preco": null,
+      "imagem_url": "https://static.wixstatic.com/media/23bc40_c78989ae218141749d865915b1c7848b~mv2.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Absolut New 6P sendo 2P Reflecta com LED e Pes Castanho Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Castanho",
+      "descricao": "Alt 2,405m Larg 2,730m Prof 0,63m Peso 259Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Roupeiro-Absolut-New-Castanho.jpeg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Multi Cancun 6P2G com Espelho Choco.OffWhite Poquema",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Choco/OffWhite",
+      "descricao": "Alt 1,80m Larg 1,48m Prof 0,40m",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/MultiCancunChoco.Off.jpeg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Dallas Gold 6P6G com Pes Cinamomo.Branco Carioca",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Cinamomo/Branco",
+      "descricao": "Alt 1,87m Larg 1,53m Prof 0,40m Peso 65,0Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/008%20-%20Dallas%20S-Esp%20Cin-Bra.2.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Capelinha NT 5015 4P3G com Espelho Branco New. Rosa Flex Notavel",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Branco/Rosa",
+      "descricao": "Alt 1,87m Larg 1,61m Prof 0,45m Peso 79Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Roupeiro-NT-5015-Branco-Rosa-2.jpeg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Apolo Ripado 2P com Espelho e Pes Naturale.Off White Gelius",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Naturale/Off White",
+      "descricao": "Alt 2,390m Larg 2,778m Prof 0,63m Peso 294Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/RoupeiroApoloRip-Nature-Off-White.jpeg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Dali 2P8G com 2 Espelhos Cinamomo.Off White Madetec",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Cinamomo/Off White",
+      "descricao": "Alt 2,40m Larg 2,78m Prof 0,605m Peso 305,5Kg",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/Gr-Dali-Cinamomo-Off-White.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Meridian Plus 2P6G com Espelho Branco D Doro",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Branco",
+      "descricao": "Alt 2,18m Larg 1,35m Prof 0,520m",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/GR%20MERIDIAN%202%20PORTAS%20BRANCO.jpg"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "fields": {
+      "nome": "Roupeiro Multi Cancun 6P2G com Espelho Choco.OffWhite Poquema (Duplicado)",
+      "categoria": "Roupeiro",
+      "ambiente": "Quarto",
+      "cor": "Choco/OffWhite",
+      "descricao": "Alt 1,80m Larg 1,48m Prof 0,40m",
+      "preco": null,
+      "imagem_url": "https://srmoveisatacadao.com.br/imagem/MultiCancunChoco.Off.jpeg"
     }
   }
 ]
