@@ -83,7 +83,7 @@ useEffect(() => {
         ))
       ) : (
         <div className="no-results">
-          <p>Nenhum produto encontrado... <br /> <strong>{searchTerm}</strong></p>
+          <p>Nenhum produto encontrado... <br /> Entre em contato com o número de whatsapp para verificar mais produtos! <br /> <strong>{searchTerm}</strong></p>
           <button 
             onClick={() => window.location.reload()} 
             className="clear-filter-btn"
@@ -98,7 +98,7 @@ useEffect(() => {
       <div className="ver-mais-container">
         <button 
           className="ver-mais-btn" 
-          onClick={() => setVisiveis(prev => prev + 37)}
+          onClick={() => setVisiveis(prev => prev + 50)}
         >
           Ver Mais Produtos
         </button>

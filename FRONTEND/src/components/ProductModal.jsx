@@ -8,6 +8,15 @@ function ProductModal({ produto, onClose }) {
   
   const [currentIndex, setCurrentIndex] = useState(0);
 
+const [isClosing, setIsClosing] = useState(false);
+
+const handleClose = () => {
+  setIsClosing(true);
+
+  setTimeout(() => {
+    onClose();
+  }, 300);
+};
   useEffect(() => {
     setCurrentIndex(0);
   }, [produto]);
@@ -40,9 +49,9 @@ const imagens = produto.imagem_url ? [produto.imagem_url] : [];
   }, [mostrarAlert]);
 
   return (
-    <div className="modal" onClick={onClose}>
+   <div className={`modal ${isClosing ? "closing" : "open"}`} onClick={handleClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-btn" onClick={onClose}>&times;</button>
+        <button className="close-btn" onClick={handleClose}>&times;</button>
 
         <h2 className="modal-title">{produto.nome}</h2>
 
@@ -56,7 +65,6 @@ const imagens = produto.imagem_url ? [produto.imagem_url] : [];
   className="modal-img"
 />
                 
-                {/* 👇 3. Condição para mostrar os botões apenas se houver > 1 imagem */}
                 {temMultiplasImagens && (
                   <div className="carousel-controls">
                     <button className="nav-btn prev" onClick={imagemAnterior}>‹</button>

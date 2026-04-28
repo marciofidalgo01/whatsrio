@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import ProductGrid from "../components/ProductGrid";
 import "../styles/CategoryPage.css";
 
+import "../styles/global.css";
+
+
 function CategoryPage() {
   const { nomeCategoria } = useParams();
 
@@ -85,8 +88,11 @@ function CategoryPage() {
           Confira nossos produtos da categoria{" "}
           <strong>{decodeURIComponent(nomeCategoria)}</strong>
         </p>
+        
       </div>
-
+         <button className="cart-shop-btn"   onClick={() => window.location.href = "/"}>
+          Voltar</button>
+        {/* css no arquivo de carrinho */}
       {mostrarFiltro && (
         <>
           <hr className="divider" /> 

@@ -11,12 +11,14 @@ function CartItem({ item }) {
 
     <div className="cart-card">
 
-      {item.imagens?.length > 0 && (
-        <img src={item.imagens[0].url} alt={item.nome} />
-      )}
-
+{item.imagem_url && (
+  <img
+    src={item.imagem_url}
+    alt={item.nome}
+    className="cart-item-img"
+  />
+)}
       <div className="cart-info">
-
         <h3>{item.nome}</h3>
 {/* 
         <p>

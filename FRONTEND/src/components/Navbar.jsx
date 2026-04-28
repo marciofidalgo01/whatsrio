@@ -54,7 +54,7 @@ function Navbar() {
   return (
   <nav className={`navbar ${menuOpen ? "active" : ""}`}>
     <Link to="/" onClick={() => setMenuOpen(false)}>
-      <img src="./logo.png" alt="Logo" className="logo" />
+      <img src="/logo.png" alt="Logo" className="logo" />
     </Link>
 
     <div className="filtro">
@@ -67,7 +67,7 @@ function Navbar() {
         onKeyDown={handleKeyDown}
       />
       <button className="btn-search" onClick={() => { handleSubmit(); setMenuOpen(false); }}>
-        <img src="./lupa2.png" alt="Lupa" className="lupa" />
+        <img src="/lupa2.png" alt="Lupa" className="lupa" />
       </button>
     </div>
 
@@ -86,7 +86,7 @@ function Navbar() {
 
       <Link to="Carrinho" className="menu-item-link" onClick={() => setMenuOpen(false)}>
         <div className="carrinho-container">
-          <img src="./carrinho.png" alt="Carrinho" className="carrinho" />
+          <img src="/carrinho.png" alt="Carrinho" className="carrinho" />
         </div>
       </Link>
 
@@ -107,7 +107,7 @@ function Navbar() {
         onClick={() => setMenuOpen(false)}
       >
         <div className="zapzap">
-          <img src="./zapzap.png" alt="Zapzap" id="zapImg" />
+          <img src="/zapzap.png" alt="Zapzap" id="zapImg" />
           <span>Falar no WhatsApp</span>
         </div>
       </a>

@@ -4,9 +4,11 @@ import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import Carrinho from "./pages/Carrinho";
 import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
-
 import CategoryPage from "./pages/CategoryPage";
+
+import Navbar from "./components/Navbar";
+import TopButton from "./components/TopButton";
+
 
 import "./styles/global.css";
 
@@ -23,6 +25,7 @@ const [search, setSearch] = useState("");
   return (
     <>
     <Navbar onSearch={handleSearch} />
+    <TopButton />
       <Routes>
         <Route path="/" element={<Home search={search} />} />
         <Route path="/produto/:id" element={<ProductDetails />} />

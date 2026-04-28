@@ -66,7 +66,6 @@ export const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
-  // 👇 Novo estado para a busca
   const [searchTerm, setSearchTerm] = useState("");
 
   function addToCart(product) {
@@ -103,8 +102,8 @@ export function CartProvider({ children }) {
       addToCart, 
       removeFromCart, 
       removeCart1,
-      searchTerm,      // 👈 Exportando o termo
-      setSearchTerm    // 👈 Exportando a função que altera o termo
+      searchTerm,      
+      setSearchTerm    
     }}>
       {children}
     </CartContext.Provider>

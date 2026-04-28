@@ -11,6 +11,7 @@ import heroImg1 from '../assets/hero1.png';
 import heroImg2 from '../assets/hero2.png';
 import heroImg3 from '../assets/hero3.png';
 
+
 function Home({search}) {  
 
 const imagensDoHero = [heroImg1, heroImg2, heroImg3];
@@ -117,20 +118,27 @@ useEffect(() => {
         <div
           key={index}
           className={`heroBgLayer ${index === indiceAtual ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${heroImg})` }}
+          style={{ backgroundImage: `url(${heroImg})`}}
+          id={`heroLayer`}
         />
       ))}
 
         <div className="divStyleBanner">
-          <h2
+         <div id="divTextBanner">
+           <h2
             ref={textRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={resetTransform}
           >
-            Seu lar merece o melhor!{" "}
-            <span>Móveis de alta qualidade</span> para todos os estilos e
-            ambientes para transformar sua casa.
+           Móveis de alta qualidade! <br /> <span> ⮕ Entregas por Rio de Janeiro e região. ⬅</span> 
+           <p>Consulte preço, frete e montagem pelo whatsapp: </p> 
+            <div id="linkHeroDiv">
+              <a   href="https://wa.me/5521992215332?text=Olá! Estou entrando em contato através do site." target="_blank" rel="noopener noreferrer">
+             +55 21 99084-8660  <img src="./zapzap.png" alt="Zapzap" id="zapImg" /></a>
+            </div>
+        
           </h2>
+         </div>
         </div>
 
         <div className="divStyleBanner">

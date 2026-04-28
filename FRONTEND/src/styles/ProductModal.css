@@ -11,14 +11,18 @@
   z-index: 1000;
   padding: 30px;
   opacity: 0;
-  animation: modalFade 0.35s ease forwards;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes modalFade{
-  from{ opacity: 0; }
-  to{ opacity: 1; }
+
+.modal.open {
+  opacity: 1;
 }
 
+/* SAÍDA */
+.modal.closing {
+  opacity: 0;
+}
 .modal-content{
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
   border: 1px solid rgba(0,0,0,0.08);
@@ -33,7 +37,6 @@
   position: relative;
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
   transform: translateY(20px);
-  animation: modalContent 0.35s ease forwards;
   max-height: 90vh;
   overflow-y: auto;
  
@@ -137,6 +140,30 @@
   background: #ef4444;
   color: white;
   transform: rotate(90deg);
+}
+
+.modal.open {
+  animation: modalFadeIn 0.35s ease forwards;
+}
+
+/* SAÍDA */
+.modal.closing {
+  animation: modalFadeOut 0.3s ease forwards;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes modalFade{
+  from{opacity:0;}
+  to{opacity:1;}
 }
 
 /* --------------------------- */
@@ -262,20 +289,11 @@ background: #25D366;
 
 
 .dark-mode .modal{
-  
-
   background: rgba(0,0,0,0.65);
   backdrop-filter: blur(4px);
-
-  
   opacity: 0;
-  animation: modalFade 0.35s ease forwards;
 }
 
-@keyframes modalFade{
-  from{opacity:0;}
-  to{opacity:1;}
-}
 
 .dark-mode .modal-content{
   background: rgb(36,36,36);
@@ -291,7 +309,6 @@ background: #25D366;
   box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 
   transform: translateY(20px);
-  animation: modalContent 0.35s ease forwards;
 
   max-height: 90vh;
   overflow-y: auto;

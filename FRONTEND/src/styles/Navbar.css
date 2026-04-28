@@ -1,6 +1,6 @@
 .logo{
- width: 120px;
- height: 120px;
+ width: 150px;
+ height: 150px;
 }
 
 .navbar{
@@ -30,11 +30,11 @@
 
 #inputPesquisar{
     padding: 5px;
-    width: 170px;
+    width: 300px;
     border: none;
     border-bottom: 2px solid black;
     margin-left: 4px;
-
+    font-size: 16px;
     background-color: transparent;
 
 }
@@ -371,7 +371,7 @@ input:checked + .slider .icon {
   }
 
   .filtro {
-        margin: 0 65px;
+        margin: 0 80px;
         margin-top: 13px;
   }
 
