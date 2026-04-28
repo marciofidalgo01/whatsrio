@@ -43,8 +43,7 @@ class Produto(models.Model):
         ordering = ["-criado_em"]
 
     def __str__(self):
-        return self.nome
-
+        return f"{self.nome} ({self.descricao})"
 
 # class ProdutoImagem(models.Model):
 #     produto = models.ForeignKey(

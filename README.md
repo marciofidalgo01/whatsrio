@@ -16,6 +16,8 @@ python manage.py runserver
 
 Para rodar o FRONTEND do projeto:
 
+cd FRONTEND
+
 npm install
 
 npm run dev

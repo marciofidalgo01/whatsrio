@@ -113,7 +113,7 @@ export function CartProvider({ children }) {
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error("useCart must be used inside CartProvider");
+    throw new Error("erro no useCart / CartContext");
   }
   return context;
 };

@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
-function ProductDetails(){
-    return(
-        <div>Detalhes do produto</div>
-    )
-}
+// function ProductDetails(){
+//     return(
+//         <div>Detalhes do produto</div>
+//     )
+// }
 
-export default ProductDetails;
+// export default ProductDetails;

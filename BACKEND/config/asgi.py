@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/6.0/howto/deployment/asgi/
 import os
 
 from django.core.asgi import get_asgi_application # type: ignore
-# PODE DAR ERRO AQUI
+# lembrar de mexer aqui quando subir o projeto
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 

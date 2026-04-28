@@ -9,8 +9,8 @@ function Footer() {
         <div className="footer-section">
           <h3>Sobre Nós</h3>
           <p>
-            Somos especialistas em venda de móveis e outros produtos,
-            oferecendo qualidade e procedência para nossos clientes. Vendas feitas somente pelo WhatsApp.
+            Somos especialistas em venda de móveis e outros produtos
+            com entregas por Rio de Janeiro e região. Vendas feitas somente pelo WhatsApp.
           </p>
         </div>
 

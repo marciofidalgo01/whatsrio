@@ -21,7 +21,7 @@ const [search, setSearch] = useState("");
     setSearch(query);
   }, 0);
 }
-// LEMBRAR DE ATUALIZAR AS ROTAS NO HOME!!!!!!!!!!!!!
+// LEMBRAR DE ATUALIZAR AS ROTAS NO HOME!!!
   return (
     <>
     <Navbar onSearch={handleSearch} />

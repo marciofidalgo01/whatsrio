@@ -7,6 +7,6 @@ router.register(r'produtos', ProdutoViewSet)
 # router.register(r'produtosimg', ProdutoImagemViewSet)
 
 # http://127.0.0.1:8000/api/produtos/delete/1
-#  para deletar um produto de ID específico
+#  para deletar um produto
 
 urlpatterns = router.urls
