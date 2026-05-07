@@ -105,7 +105,7 @@ function CategorySection({ onSearch }) {
 
       <div className="filtersContainer">
 
-        <div className="filterGroup">
+        <div className="filterGroup" style={{ zIndex: openFilter === "categoria" ? 1001 : 1 }}>
           <div
             className="customSelect"
             onClick={(e) => {
@@ -140,7 +140,7 @@ function CategorySection({ onSearch }) {
         </div>
 
         {/* ===== AMBIENTE ===== */}
-        <div className="filterGroup">
+        <div className="filterGroup" style={{ zIndex: openFilter === "ambiente" ? 1001 : 1 }}>
           <div
             className="customSelect"
             onClick={(e) => {
@@ -167,8 +167,7 @@ function CategorySection({ onSearch }) {
           </div>
         </div>
 
-        {/* ===== COR ===== */}
-        <div className="filterGroup">
+        <div className="filterGroup" style={{ zIndex: openFilter === "cor" ? 1001 : 1 }}>
           <div
             className="customSelect"
             onClick={(e) => {

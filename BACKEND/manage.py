@@ -3,8 +3,6 @@
 import os
 import sys
 
-# USUARIO: python123
-# SENHA ADMIN: loja1234
 
 def main():
     """Run administrative tasks."""

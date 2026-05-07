@@ -6,34 +6,60 @@ import { useCart } from "../context/CartContext";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { setSearchTerm } = useCart();
-  
-  const [dark, setDark] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
 
   const [search, setSearch] = useState("");
 
+  const getInitialTheme = () => {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme) {
+    return savedTheme === "dark";
+  }
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+};
+
+const [dark, setDark] = useState(getInitialTheme);
+const [manualTheme, setManualTheme] = useState(
+  localStorage.getItem("theme") !== null
+);
+
+
   useEffect(() => {
-    if (dark) {
-      document.body.classList.add("dark-mode");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.body.classList.remove("dark-mode");
-      localStorage.setItem("theme", "light");
+  if (dark) {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+  }
+}, [dark]);
+
+useEffect(() => {
+  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const handleChange = (e) => {
+    if (!manualTheme) {
+      setDark(e.matches);
     }
-  }, [dark]);
+  };
+
+  mediaQuery.addEventListener("change", handleChange);
+
+  return () => {
+    mediaQuery.removeEventListener("change", handleChange);
+  };
+}, [manualTheme]);
 
  function handleSubmit() {
-  // 1. Atualiza o termo de busca no Contexto
   setSearchTerm(search);
 
-  // 2. Executa o scroll se houver algo digitado
   if (search.trim()) {
     const section = document.getElementById("vitrine");
     if (section) {
       section.scrollIntoView({ 
-        behavior: "smooth", // Faz o deslize suave
-        block: "start"      // Alinha o topo da div com o topo da tela
+        behavior: "smooth", 
+        block: "start"      
       });
     }
   }
@@ -53,9 +79,16 @@ function Navbar() {
 
   return (
   <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-    <Link to="/" onClick={() => setMenuOpen(false)}>
-      <img src="/logo.png" alt="Logo" className="logo" />
+   <div className="navbar-content-title">
+     <Link to="/" onClick={() => setMenuOpen(false)}>
+      <img src="/logo3.png" alt="Logo" className="logo" />
     </Link>
+    
+<div className="site-title">
+      <h1>
+  WhatsRioMóveis
+</h1>
+    </div>
 
     <div className="filtro">
       <input
@@ -76,6 +109,7 @@ function Navbar() {
       <div className={`bar ${menuOpen ? "open" : ""}`}></div>
       <div className={`bar ${menuOpen ? "open" : ""}`}></div>
     </div>
+   </div>
 
     <div className={`nav-menu ${menuOpen ? "show" : ""}`}>
       
@@ -92,7 +126,13 @@ function Navbar() {
 
       <div className="theme-selection">
         <label className="switch">
-          <input type="checkbox" checked={dark} onChange={() => setDark(!dark)} />
+         <input
+  type="checkbox"
+  checked={dark}
+  onChange={() => {
+    setDark(!dark);
+  }}
+/>
           <span className="slider">
             <span className="icon">{dark ? "🌙" : "☀️"}</span>
           </span>

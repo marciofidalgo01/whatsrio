@@ -14,7 +14,12 @@
 
 }
 
-
+ h2 {
+    margin-top: 10px;
+    border-left: 4px solid #2ec700;
+    padding-left: 10px;
+  }
+  
 .heroBanner {
     position: relative;
     width: 100%;
@@ -146,6 +151,8 @@
       display: flex;
   align-items: center;
   justify-content: center;
+   font-size: 1.5em;
+
     }
   }
 .heroBanner button {
@@ -330,35 +337,31 @@
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 10px;
-  color: #aaa;
+  color: #bbbbbb;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
 
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-
-.footer-section ul li a {
-  text-decoration: none;
-  color: #aaa;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-.footer-section ul li a:hover {
-  color: #00ff88;
-}
 
 .footer-bottom {
   text-align: center;
   padding: 20px;
   border-top: 1px solid #222;
   font-size: 0.85rem;
-  color: #777;
+  color: #979797;
+}
+
+.footer-links{
+  margin-top: 10px
+}
+
+#politica-de-cookies{
+  font-size: 0.85rem;
+  color: #979797;
+  text-decoration: underline;
+}
+
+#politica-de-cookies:hover{
+  color: #48ff00;
 }
 
 #divDisplayContent{

@@ -1,6 +1,10 @@
 import React from "react";
 import "../styles/global.css";
 
+import Cookies from "../pages/Cookies";
+import { Link } from "react-router-dom";
+
+
 function Footer() {
   return (
     <footer className="footer">
@@ -35,6 +39,9 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} whatsriomoveis.com.br</p>
+        <div className="footer-links">
+          <Link to="/politica-de-cookies" id="politica-de-cookies">Política de Cookies</Link>
+        </div>
       </div>
     </footer>
   );

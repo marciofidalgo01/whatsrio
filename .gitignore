@@ -1,21 +1,71 @@
-# Python
+# 🔹 Python / Django
 venv/
+ENV/
+env/
 BACKEND/venv/
+
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# Django
+*.sqlite3
 db.sqlite3
 
-# React
+# logs
+*.log
+
+# arquivos temporários
+*.swp
+*.swo
+
+# migrations compiladas (opcional ignorar cache)
+**/migrations/__pycache__/
+
+# 🔹 Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# 🔹 Django arquivos sensíveis
+local_settings.py
+settings_local.py
+
+# 🔹 React / Node
 node_modules/
 build/
+dist/
 
-# env
-.env
+# cache
+.npm
+.yarn
+.pnpm-store
 
-# OS
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔹 IDEs / Editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 🔹 Sistema operacional
 .DS_Store
 Thumbs.db
+
+# 🔹 Arquivos de deploy
+*.pem
+*.key
+
+
+# 🔹 Coverage / testes
+.coverage
+htmlcov/
+coverage.xml
+
+# 🔹 Misc
+*.bak
+*.tmp
+*.temp

@@ -1,14 +1,12 @@
-/* Variáveis de Cores - Tema Light (Padrão) */
 :root {
   --bg-gradient: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
   --text-main: #111827;
   --text-muted: #6b7280;
   --text-body: #4b5563;
-  --accent-color: #76f63b; /* Azul moderno para detalhes */
+  --accent-color: #76f63b; 
   --card-bg: rgba(255, 255, 255, 0.8);
 }
 
-/* Variáveis de Cores - Tema Dark */
 [data-theme='dark'] {
   --bg-gradient: linear-gradient(180deg, #0f172a 0%, #020617 100%);
   --text-main: #f8fafc;
@@ -21,7 +19,7 @@
 .category-page {
   padding: 40px 60px;
   min-height: 100vh;
-  transition: background 0.3s ease; /* Transição suave entre temas */
+  transition: background 0.3s ease; 
 }
 
 /* HEADER */
@@ -30,7 +28,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border-left: 4px solid var(--accent-color); /* Detalhe lateral elegante */
+  border-left: 4px solid var(--accent-color); 
   padding-left: 20px;
 }
 
@@ -48,16 +46,13 @@
   line-height: 1.5;
 }
 
-/* GRID DE PRODUTOS */
 .product-grid {
   margin-top: 30px;
   display: grid;
-  /* Cria um grid responsivo automático sem precisar de muitos @media */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 25px;
 }
 
-/* ESTADO VAZIO / LOADING */
 .category-page .empty-state {
   font-size: 1rem;
   color: var(--text-body);
@@ -65,10 +60,9 @@
   padding: 50px;
   background: var(--card-bg);
   border-radius: 12px;
-  backdrop-filter: blur(8px); /* Efeito de vidro */
+  backdrop-filter: blur(8px);
 }
 
-/* RESPONSIVO */
 @media (max-width: 900px) {
   .category-page {
     padding: 30px 20px;
@@ -87,7 +81,6 @@
   }
 }
 
-/* --- CONTAINER DO FILTRO --- */
 .color-filter-bar {
   display: flex;
   flex-direction: column;
@@ -104,17 +97,15 @@
   letter-spacing: 0.5px;
 }
 
-/* --- GRUPO DE BOTÕES --- */
 .color-options {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Garante que quebre linha em telas pequenas */
+  flex-wrap: wrap; 
 }
 
-/* --- ESTILO DOS BOTÕES --- */
 .color-options button {
   padding: 8px 18px;
-  border-radius: 13px; /* Formato pílula */
+  border-radius: 13px; 
   background-color: #fff;
   color: #374151;
   font-size: 0.9rem;
@@ -126,7 +117,6 @@
   border: 2px solid black;
 }
 
-/* --- HOVER --- */
 .color-options button:hover {
   border-color: #111827;
   background-color: #f9fafb;
@@ -134,39 +124,16 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --- ESTADO ATIVO (Selecionado) --- */
 .color-options button.active {
-  background-color: #0e6600; /* Preto profundo */
+  background-color: #0e6600; 
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(17, 24, 39, 0.25);
   border: none;
 }
 
-/* --- DIVISOR --- */
 .divider {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.493);
   margin: 20px 0 20px 0;
 }
 
-/* --- RESPONSIVIDADE --- */
-@media (max-width: 600px) {
-  .color-filter-bar {
-    align-items: center;
-    text-align: center;
-  }
-  
-  .color-options {
-    justify-content: center;
-  }
-}
-
-.dark-mode .color-filter-bar span {
-    color: white;
-}
-
-.dark-mode .divider{
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.493);
-
-}
